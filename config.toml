@@ -1,3 +1,18 @@
 languageCode = "fr-CH"
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 title = "My New Hugo Site"
+
+[[menu.main]]
+    name = "Home"
+    weight = 0
+    url = "/"
+[[menu.main]]
+    name = "À propos"
+    weight = 10
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "Contact"
+    weight = 20
+    identifier = "contact"
+    url = "/contact/"
