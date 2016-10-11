@@ -1,0 +1,20 @@
+language: go
+
+install: go get -v github.com/spf13/hugo
+
+script:
+  - hugo
+
+deploy:
+  skip_cleanup: true
+  provider: s3
+  access_key_id: AKIAJYDUFZC3MTJ7M4DQ
+  secret_access_key:
+    secure: AG2FgVF0m4QlQ5I2Xi+mhycwdLTBcincwVHFKyFA6TZDWVh5Q52k+gyBVcfF1zJrAa85RTTG75ZeGBG1dn7jXv31TCebagAkqJuF//duR5GBRoizN4pEUu79BcuCEZcfi2gliBu5W6CISNb4ddw4Oy290+5X9x2jvSom4r8rwtj/GDUVVKnN8d6hgeQrskuMx3V2dCdfVIslk/pmE+VoQ1nHs5pYBu6y2PKtzvUXlV+r7+WENfca5QCBh7JiDI4o6AOurCl7zACg/Ew5sE+AExwFlXVxYXFqhZLVgiIJ9iorZF9nMMWhc06u6qGT2hyWLlqavTG0hIvm7zPHgSOojBtDMIQESGyf05vE5FMA3KNRJYy0BoT8WT+JcKKEaoy0WDoJUCzGVACq2XUP6qdeqUSKYK2AVTwkVbSalewGg4Y1GGVxIPmYwyBcVwbDux8l2Bu2XfHUv0KdEEXLzlL8x7nN4+E9Ch0qjP6GN2YostnaXhZ9FRJYWXaKLuV4np0oEeTKVOp77W+tCLLoTnNgxjBXfiixts3JxUyjj38HH+FZtyGzz0tUi5vspU2vfuIhhhLaRFNy077feY+Col12N01c5noyX/E+XOVEqqLySXwR7eqinJjZRaflKepgOrxibuovRkw5/UlvLcdY4TJNOjab2gSpVWT+GIop51S4IaY=
+  bucket: educasuisse.laruche.io
+  region: eu-west-1
+  local_dir: public
+  acl: public_read
+  on:
+    repo: educasuisse/educasuisse.ch
+    branch: master
