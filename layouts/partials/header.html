@@ -10,6 +10,7 @@
   </head>
   <body lang="{{ .Site.LanguageCode }}">
     <img src="/img/logo_educasuisse.jpg">
+    {{ .Title }}
     <nav class="sidebar-nav">
           {{ $currentNode := . }}
           {{ range .Site.Menus.main }}
