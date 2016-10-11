@@ -3,14 +3,14 @@ baseurl = "https://educasuisse.ch/"
 title = "Conservatoire des Arts, des Sciences et des Lettres"
 
 [[menu.main]]
-    name = "Home"
+    name = "Accueil"
     weight = 0
     url = "/"
 [[menu.main]]
-    name = "À propos"
+    name = "À propos de Educasuisse"
     weight = 10
     identifier = "about"
-    url = "/about/"
+    url = "/a-propos/"
 [[menu.main]]
     name = "Contact"
     weight = 20
