@@ -1,6 +1,6 @@
 languageCode = "fr-CH"
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "My New Hugo Site"
+baseurl = "https://educasuisse.ch/"
+title = "Conservatoire des Arts, des Sciences et des Lettres"
 
 [[menu.main]]
     name = "Home"
