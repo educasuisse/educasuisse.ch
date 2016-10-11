@@ -2,20 +2,28 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <base href="{{ .Site.BaseURL }}">
       <title> {{ .Title }} - Educasuisse</title>
       <link rel="canonical" href="{{ .Permalink }}">
 
-      <link rel="stylesheet" href="/css/main.css" media="screen">
+      <link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css"/>
 
   </head>
   <body lang="{{ .Site.LanguageCode }}">
-    <img src="/img/logo_educasuisse.jpg">
-    {{ .Title }}
-    <nav class="sidebar-nav">
-          {{ $currentNode := . }}
-          {{ range .Site.Menus.main }}
-          <a class="sidebar-nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
-          {{ end }}
+    <header class="mw5 mw7-ns center tc pa3 ph5-ns">
+      <a href="/" title="EducaSuisse" rel="home">
+        <img src="/img/logo_educasuisse.jpg" alt="Logo Educasuisse" class="mw4 mw6-ns">
+      </a>
+      <h1 class="f5 f4-ns fw5 black-70">
+        {{ .Site.Title }}
+      </h1>
+    </header>
+    <div class="bg-black-70 w-100 ph3 pv3 ph4-m ph5-l">
+      <nav class="f6 fw6 ttu tracked">
+        {{ range .Site.Menus.main }}
+          <a class="link dim white dib mr3" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+        {{ end }}
       </nav>
+    </div>
