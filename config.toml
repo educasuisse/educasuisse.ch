@@ -16,3 +16,6 @@ title = "Conservatoire des Arts, des Sciences et des Lettres"
     weight = 20
     identifier = "contact"
     url = "/contact/"
+
+[blackfriday]
+extensions = ["hardLineBreak"]
