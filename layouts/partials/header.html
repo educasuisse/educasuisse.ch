@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title> {{ .Title }} - Educasuisse</title>
+      <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}Educasuisse</title>
       <link rel="canonical" href="{{ .Permalink }}">
 
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css"/>
