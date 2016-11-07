@@ -6,7 +6,8 @@ title: "Contact"
 
 N'hésitez pas à nous contacter pour toute information!
 
-<form action="" method="" accept-charset="utf-8">
+<form action="" method="POST" accept-charset="utf-8">
+  <input type="text" name="_gotcha" style="display: none">
   <fieldset id="form-message" class="ba b--transparent ph0 mh0">
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="name">Nom, Prénom</label>
@@ -14,11 +15,11 @@ N'hésitez pas à nous contacter pour toute information!
     </div>
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="email-address">E-mail</label>
-      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email-address" id="email-address">
+      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="_replyto" id="email-address">
     </div>
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="subject">Sujet</label>
-      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="text" name="subject" id="subject">
+      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="text" name="_subject" id="subject">
     </div>
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="message">Message</label>
