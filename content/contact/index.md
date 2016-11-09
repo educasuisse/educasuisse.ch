@@ -6,7 +6,7 @@ title: "Contact"
 
 N'hésitez pas à nous contacter pour toute information!
 
-<form action="" method="POST" accept-charset="utf-8">
+<form action="https://formspree.io/mnqkglax" method="POST" accept-charset="utf-8">
   <input type="text" name="_gotcha" style="display: none">
   <fieldset id="form-message" class="ba b--transparent ph0 mh0">
     <div class="mt3">
