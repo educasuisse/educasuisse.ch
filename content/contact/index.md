@@ -15,7 +15,7 @@ N'hésitez pas à nous contacter pour toute information!
     </div>
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="email-address">E-mail</label>
-      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="_replyto" id="email-address">
+      <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email" id="email-address">
     </div>
     <div class="mt3">
       <label class="db fw4 lh-copy f6" for="subject">Sujet</label>
