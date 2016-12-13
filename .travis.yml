@@ -1,6 +1,16 @@
-language: go
-install: go get -v github.com/spf13/hugo
-script: hugo
+language: ruby
+rvm:
+- 2.2.5
+
+install: gem install jekyll html-proofer
+script: jekyll build && htmlproofer ./_site
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
 deploy:
   provider: s3
   access_key_id: AKIAIU7MXSBEPNHZ2HMQ
@@ -9,7 +19,7 @@ deploy:
   bucket: educasuisse.ch
   region: eu-west-1
   skip_cleanup: true
-  local_dir: public
+  local_dir: _site
   acl: public_read
   on:
     repo: educasuisse/educasuisse.ch
