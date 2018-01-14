@@ -8,25 +8,23 @@ layout: default
 
   <p>N'hésitez pas à nous contacter pour toute information!</p>
 
-  <form action="https://formspree.io/mgvvkgbx" method="POST" accept-charset="utf-8">
-    <input type="text" name="_gotcha" style="display: none">
-    <input type="hidden" name="_next" value="http://educasuisse.ch/merci/" />
+  <form action="/contact/form.php" method="POST" accept-charset="utf-8">
     <fieldset id="form-message" class="ba b--transparent ph0 mh0">
       <div class="mt3">
         <label class="db fw4 lh-copy f6" for="name">Nom, Prénom</label>
-        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="text" name="name" id="name">
+        <input class="pa2 input-reset ba bg-transparent w-100" type="text" name="name" id="name" required>
       </div>
       <div class="mt3">
-        <label class="db fw4 lh-copy f6" for="email-address">E-mail</label>
-        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email" id="email-address">
+        <label class="db fw4 lh-copy f6" for="email">E-mail</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="email" name="email" id="email" required>
       </div>
       <div class="mt3">
         <label class="db fw4 lh-copy f6" for="subject">Sujet</label>
-        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="text" name="_subject" id="subject">
+        <input class="pa2 input-reset ba bg-transparent w-100" type="text" name="subject" id="subject" required>
       </div>
       <div class="mt3">
-        <label class="db fw4 lh-copy f6" for="message">Message</label>
-        <textarea class="pa2 input-reset ba bg-transparent w-100 measure" rows="4" cols="50" name="message" id="message"></textarea>
+        <label class="db fw4 lh-copy f6" for="query">Message</label>
+        <textarea class="pa2 input-reset ba bg-transparent w-100" rows="4" cols="50" name="query" id="query" required></textarea>
       </div>
     </fieldset>
     <div class="mt3">
